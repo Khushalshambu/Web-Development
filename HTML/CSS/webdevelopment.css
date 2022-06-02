@@ -5,3 +5,27 @@
   text-align: center;
   font-weight: bold;
 }
+.odd {
+  background-color: rgb(217, 180, 195);
+  font-family: 'Verdana','DejaVu Sans','sans-serif';
+}
+ #id02 {
+  color: Blue;
+  font-size: 36px;
+  font-family: sans-serif;
+}
+.odd.div03 {
+  font-size: 24px;
+}
+.button01,.button02 {
+  font-family: 'Helvetica','Times New Roman','sans-seriff';
+  font-size: 28px;
+}
+.button01 {
+  background-color: black;
+  color: white;
+
+}
+.button02 {
+  background-color: yellow;
+}
