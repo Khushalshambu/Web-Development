@@ -1,4 +1,12 @@
-.div1 {
+html {
+  border:2px;
+  }* {
+  box-sizing: border-box;
+  margin: 0 2em 0 2em;
+  padding-left:2em;
+  padding-right:2em;
+  }
+  .div1 {
   background-color: red;
   color: white;
   font-size: 32px;
@@ -21,11 +29,52 @@
   font-family: 'Helvetica','Times New Roman','sans-seriff';
   font-size: 28px;
 }
+.button01:hover, .button02:hover {
+  background-color: #fff;
+  padding-left: 20px;
+}
 .button01 {
-  background-color: black;
-  color: white;
+  background-color: aqua;
+  color: black;
 
 }
 .button02 {
   background-color: yellow;
+}
+.table-of-contents {
+  float:left;
+  margin-right: 20px;
+  border: 4px solid aliceblue;
+  margin-left: 20px;
+  padding: 20px;
+}
+.trying {
+  margin-top: 20px;
+  padding-top: 50px;
+  border: 2px solid black;
+}
+.div1 {
+  font-weight: lighter;
+  background-color: pink;
+  color: black;
+  text-align: left;
+  border: 2px solid blue;
+  margin: 3em 2em 1em 3em;
+  padding: 20px 20px;
+}
+.div2 {
+    background-color: aqua;
+    color: black;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 0px;
+    border: 3px solid maroon;
+    margin: 0 2em 4em 3em;
+}
+.div3 {
+  background: orange;
+  font-weight: 100;
+  border:2px solid red;
+  padding: 40px 40px;
+  margin: 4em 2em 4em 70em;
 }
