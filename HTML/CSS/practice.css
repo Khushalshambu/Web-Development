@@ -1,0 +1,64 @@
+body{
+  background-color: white;
+}
+/* --Top-- */
+.top {
+  display: flex;
+}
+.left {
+  display: flex;
+  flex: 1 1 auto;
+}
+.toptext {
+  margin-left:0.5em;
+}
+.right {
+  display: flex;
+}
+/* --Top-- */
+
+/* --Center-- */
+.centre {
+
+  margin-top: 15em;
+  text-align: center;
+}
+img {
+  height: 100px;
+}
+button {
+  margin: 0.4em;
+  margin-left:3px;
+  font-size: 0.8em;
+}
+input {
+  width:20em;
+}
+.text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  color:rgb(122, 74, 6);
+  font-weight: 900;
+}
+/* --center-- */
+
+/* --bottom-- */
+.bottom {
+
+  background-color:rgb(227, 224, 220);
+  display: flex;
+  margin:0;
+  margin-top: 27em;
+
+  padding:0;
+}
+.left {
+  display: flex;
+  flex: 1 1 auto;
+}
+.bottomtext {
+  margin-left:0.5em;
+}
+.right {
+  display: flex;
+}
