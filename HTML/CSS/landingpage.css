@@ -1,170 +1,120 @@
-body {
+/*
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another as per the design specs
+   provided
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created
+   during the demo, so you'll have to
+   add it back in
+*/
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
 }
-* {
-  margin :0;
-  padding:0;
-}
-header {
-  height: 5em;
-  position: fixed;
-  background-color: #1f2937;
-  color: white;
-  width : 100%;
 
+h1 {
+  font-size: 3rem;
 }
-.nav {
-  position: absolute;
-  width :100%;
-  top:35px;
 
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.nav a {
-  position: relative;
-  left:65%;
-  margin-right: 10px;
-  color: white;
-  text-decoration: none;
-}
-header h2{
-  font-size:30px;
-  font-weight: bolder;
-  margin-top: 0.6em;
-  margin-left: 2em;
-}
-.first {
-  position:absolute;
+
+.row {
+  /* display: flex => flex container */
   display: flex;
-  background-color: #1f2937;
-  align-items: center;
-  justify-content: space-around;
-  height:30vh;
-  width : 100%;
-  top:8.6%;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* can't use yet */
+  /* gap: 100px; */
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
 }
 img {
-  position: relative;
-  position: relative;
-  margin-left: 4em;
-  margin-right: 4em;
-  top:10%;
-  height:15vh;
-  width:15vh;
+  max-width:100%;
 }
-.first h1 {
-  position: relative;
-  margin-right: 1em;
-  left:20%;
-  top:10%;
-  color:white;
+.hero__img {
+  width:30%;
+  border:2px solid white;
 }
-.first p {
-  position: relative;
-  margin-right: 1em;
-  margin-top: 1em;
-  left:20%;
-  top:10%;
-  color:white;
-  width:300px;
+
+.hero__text {
+  width: 60%;
 }
-.first button{
-  position: relative;
-  background-color: blue;
-  margin-right: 1em;
-  left:20%;
-  margin-top: 2em;
-  color:white;
-  width: 10vh;
-  height: 3vh;
-  border-radius: 5px;
+
+.hero h1 {
+  margin-top:0;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
 }
 .second {
-  position:absolute;
-  left:45%;
-  top:40%;
+  display:flex;
+  justify-content: space-between;
+  margin:0 2em 0 2em;
+  padding:3rem;
+  font-size:21px;
+}
+.second h2 {
+  font-size:48px;
+  color:#136C72;
+}
+.second .left {
+  text-align: left;
+  width:58%;
+}
+.second .right {
   text-align: center;
-  font-size: 30px;
-  font-weight: bolder;
-  margin-left: -1em;
-}
-.box {
-  display: flex;
-  margin-left:50em;
-}
-.box div {
-  margin-top: 28em;
-  margin-left:1em;
-  height:80px;
-  width:100px;
-  border-radius: 0.6em;
-  border: 2px solid blue;
-}
-.text {
-  display: flex;
-  margin-left:50em;
-}
-.text p {
-  font-size:14px;
-  font-size-adjust: 10%;
-  width:8em;
-  margin:0.6em;
-}
-.third {
-  background-color:#E5e7eb;
-  text-align: center;
-  height:200px;
-  width:100%;
-}
-.third div {
-  text-align: center;
-  padding:6em;
-  margin:4em;
-}
-.third h3 {
-  position: relative;
-  margin:4em;
-  bottom:68%;
-  left:30%;
-}
-.fourth {
-  position:absolute;
-  background-color: white;
-  width:100%;
-  height: 10vh;
-  margin:1em;
-  margin-bottom: 1em;
-}
-.fourthcontainer{
-  background: blue;
-  height: 7vh;
-  padding: 2em;
-  border-radius:0.4em;
-  width: 100vh;
-  margin-left: 40em;
-}
-.fourthleft p {
-  font-size: 15px;
-}
-.fourthleft h5 {
-  font-size: 20px;
-}
-.fourthright button{
-  position: absolute;
-  left: 66%;
-  top:63%;
-  width: 4.6em;
-  background-color: beige;
-}
-footer {
-  position :fixed;
-  bottom: 0;
-  height: 7vh;
-  background-color: #1f2937;
-  color: white;
-  width : 100%;
-}
-footer h2{
-  text-align: center;
-  margin-top: 0.7em;
+  width:40%;
+  color:white;
+  background:#136C72;
+  margin:1.1rem;
 }
